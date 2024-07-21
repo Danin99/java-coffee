@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Receipt</title>
+</head>
+
+<body>
+    <div class="flex h-screen w-full items-center justify-center bg-slate-400">
+        <div class="w-80 rounded bg-gray-50 px-6 py-3 shadow-lg hover:">
+           <!-- header -->         
+            <div class="mx-auto w-10 py-1">
+                <img src="logo2.jpg" alt="chippz">
+            </div>
+            <div class="flex flex-col justify-center items-center gap-1">
+                <h4 class="font-serif">Coffee Day</h4>
+                <p class="text-xs">Order Number #001 </p>
+            </div>
+            <div class="border border-black"></div>
+            <!-- body -->
+            <div class="flex flex-col gap-3 pb-6 pt-2 text-xs text-left">
+                <table class="table-auto border-separate border-spacing-y-2">
+                    <thead>
+                        <tr>
+                            <th class="w-2/5">Name</th>
+                            <th class="w-1/5">QTY</th>
+                            <th class="w-1/5">Price</th>
+                            <th class="w-1/5">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody class="gap-3">
+                        <tr>
+                            <td>GreenTea</td>
+                            <td>2</td>
+                            <td>$1.2</td>
+                            <td>$2.4</td>
+                        </tr>
+                        <tr>
+                            <td>Hot Americano</td>
+                            <td>1</td>
+                            <td>$1.5</td>
+                            <td>$1.5</td>
+                        </tr>
+                        <tr>
+                            <td>Ice Americano</td>
+                            <td>1</td>
+                            <td>$1.75</td>
+                            <td>$1.75</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <button class="w-full h-8 bg-slate-400 rounded "><i class="fa-solid fa-plus"></i>Add more</button>
+                </div>
+            </div>
+            <!-- footer -->
+            <div class=" border-b border border-dashed"></div>
+            <div class="py-2 px-2 gap-2 grid grid-rows-5 text-xs bg-slate-200 mt-4 rounded">
+                <div class="grid grid-cols-2 gap-10">
+                    <div>
+                        <span>Sub Total :</span>
+                        <span>$5.65</span>
+                    </div>
+                    <div>
+                        <span>Tax : </span>
+                        <span>0</span>
+                    </div>
+                </div>
+                <div>
+                    <span>Discount : </span>
+                    <span>0%</span>
+                </div>
+                <div class="row-span-3 bg-slate-300 rounded text-center text-lg py-4">
+                    <span>Total Amount: </span>
+                    <span>$5.65</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
